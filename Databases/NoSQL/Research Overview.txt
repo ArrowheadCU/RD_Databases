@@ -1,0 +1,43 @@
+Challenges with RDBMS
+	- 'Impedence Mismatch'
+	- Cost effective scalablity (Need more power)
+	- Schema dependencies
+	- Execution runtime limiting analysis capabilities
+
+
+NoSQL Definition (Character
+	-non-relational
+	-cluster friendly
+	-open-source
+	-schema-less (sort of)
+		-There needs to be implicit schema to understand how to pull data
+		 out of object (i.e. understand naming conventions of keys)
+
+Types
+	Aggregate Oriented - Allow one to store complex data structures
+		Types:
+			-Document Store (Document is aggregate)
+			-Key Value (Value is the aggregate)
+			-Column-Family
+		Pro/Con
+			-Advantage: Read and write
+			-Disadvantage: Aggregate data beyond index (slice and dice data)
+	
+	Graph Oriented
+		Pro/Con
+			-Advantages: Capablitity complex relationships
+
+Consistency
+	RDBMS = ACID
+	NoSQL = BASE except Graph = ACID
+		-Update transaction records with
+		-Have Option between consistence or availability (Business choice)
+	CAP Theorem - Can choose up to 2
+		Partition
+		Consistency
+		Availability
+
+Biggest Advantage of NoSQL (Solutions)
+	-easier deveoplment
+	-large scale data
+	
